@@ -14,22 +14,24 @@
         <h1>Link Shortener</h1>
         <div class="file">
             <div class="form-container">
-                <form name="myForm" onsubmit="return shortenLink()" method="post">
-                    Enter a Link: <input type="text" name="fname">
-                    <input type="submit" value="Submit">
-                </form>
+                <label>
+                    Enter a Link:
+                    <input class="main-input" type="text" placeholder="example.com" id="input" value="">
+                </label>
+                <button type="submit" class="main-submit" id="submit">Submit</button>
+                <label>
 
-                <div class="radio-toolbar">
-                    Short domain:
-                    <input type="radio" id="domain1" name="domain" value="shrtco.de" checked="">
-                    <label for="domain1">shrtco.de</label>
+                    <div class="radio-toolbar">
+                        Short domain:
+                        <input type="radio" id="domain1" name="domain" value="shrtco.de" checked="">
+                        <label for="domain1">shrtco.de</label>
 
-                    <input type="radio" id="domain2" name="domain" value="9qr.de">
-                    <label for="domain2">9qr.de</label>
+                        <input type="radio" id="domain2" name="domain" value="9qr.de">
+                        <label for="domain2">9qr.de</label>
 
-                    <input type="radio" id="domain3" name="domain" value="shiny.link">
-                    <label for="domain3">shiny.link</label>
-                </div>
+                        <input type="radio" id="domain3" name="domain" value="shiny.link">
+                        <label for="domain3">shiny.link</label>
+                    </div>
                 </label>
             </div>
         </div>
@@ -39,8 +41,8 @@
     </div>
     <br>
     <div class="result-item">
-        <small>Link generated!</small><br>
-        <a class="green-text bold" href="" target="_blank">shrtco.de/example</a>
+        <small>Link result here:</small><br>
+        <a href="https://www.mindx.edu.vn" target="_blank">exple.shrt</a>
     </div>
     <script src="app.js"></script>
 </body>
